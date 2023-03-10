@@ -412,7 +412,7 @@ inline fun <reified T> Source.toValue(): T {
     return Config().withSource(this).toValue()
 }
 
-private val singleVariablePattern = Pattern.compile("^\\$\\{(.+)}$")
+private val singleVariablePattern = Pattern.compile("^\\$\\{(.+)\\}$")
 
 private fun TreeNode.substituted(
     source: Source,
